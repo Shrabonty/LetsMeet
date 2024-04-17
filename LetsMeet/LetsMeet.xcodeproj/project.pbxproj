@@ -14,6 +14,12 @@
 		799180252BD0447D00157F43 /* LetsMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799180242BD0447D00157F43 /* LetsMeetTests.swift */; };
 		7991802F2BD0447D00157F43 /* LetsMeetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991802E2BD0447D00157F43 /* LetsMeetUITests.swift */; };
 		799180312BD0447D00157F43 /* LetsMeetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799180302BD0447D00157F43 /* LetsMeetUITestsLaunchTests.swift */; };
+		799180412BD077DA00157F43 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799180402BD077DA00157F43 /* Color.xcassets */; };
+		799180432BD07AD200157F43 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799180422BD07AD200157F43 /* SignInView.swift */; };
+		799180462BD07BBE00157F43 /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799180452BD07BBE00157F43 /* ImageName.swift */; };
+		799180492BD0828F00157F43 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799180482BD0828F00157F43 /* ColorExtension.swift */; };
+		7991804B2BD08C1100157F43 /* countryDialCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 7991804A2BD08C1100157F43 /* countryDialCode.json */; };
+		7991804D2BD08CA400157F43 /* CountryDialCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991804C2BD08CA400157F43 /* CountryDialCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		7991802A2BD0447D00157F43 /* LetsMeetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsMeetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7991802E2BD0447D00157F43 /* LetsMeetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsMeetUITests.swift; sourceTree = "<group>"; };
 		799180302BD0447D00157F43 /* LetsMeetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsMeetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		799180402BD077DA00157F43 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		799180422BD07AD200157F43 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		799180452BD07BBE00157F43 /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
+		799180482BD0828F00157F43 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		7991804A2BD08C1100157F43 /* countryDialCode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = countryDialCode.json; path = ../../../../countryDialCode.json; sourceTree = "<group>"; };
+		7991804C2BD08CA400157F43 /* CountryDialCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDialCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +87,9 @@
 		799180062BD0447B00157F43 = {
 			isa = PBXGroup;
 			children = (
+				799180442BD07B6500157F43 /* Utils */,
 				799180112BD0447B00157F43 /* LetsMeet */,
+				799180472BD07EDB00157F43 /* Resources */,
 				799180232BD0447D00157F43 /* LetsMeetTests */,
 				7991802D2BD0447D00157F43 /* LetsMeetUITests */,
 				799180102BD0447B00157F43 /* Products */,
@@ -97,7 +111,10 @@
 			children = (
 				799180122BD0447B00157F43 /* LetsMeetApp.swift */,
 				799180142BD0447B00157F43 /* ContentView.swift */,
+				7991803D2BD0755300157F43 /* View */,
+				7991803E2BD0758700157F43 /* Model */,
 				799180162BD0447D00157F43 /* Assets.xcassets */,
+				799180402BD077DA00157F43 /* Color.xcassets */,
 				799180182BD0447D00157F43 /* LetsMeet.entitlements */,
 				799180192BD0447D00157F43 /* Preview Content */,
 			);
@@ -127,6 +144,39 @@
 				799180302BD0447D00157F43 /* LetsMeetUITestsLaunchTests.swift */,
 			);
 			path = LetsMeetUITests;
+			sourceTree = "<group>";
+		};
+		7991803D2BD0755300157F43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				799180422BD07AD200157F43 /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7991803E2BD0758700157F43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7991804C2BD08CA400157F43 /* CountryDialCode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		799180442BD07B6500157F43 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				799180452BD07BBE00157F43 /* ImageName.swift */,
+				799180482BD0828F00157F43 /* ColorExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		799180472BD07EDB00157F43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7991804A2BD08C1100157F43 /* countryDialCode.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7991801B2BD0447D00157F43 /* Preview Assets.xcassets in Resources */,
+				7991804B2BD08C1100157F43 /* countryDialCode.json in Resources */,
 				799180172BD0447D00157F43 /* Assets.xcassets in Resources */,
+				799180412BD077DA00157F43 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799180432BD07AD200157F43 /* SignInView.swift in Sources */,
+				7991804D2BD08CA400157F43 /* CountryDialCode.swift in Sources */,
 				799180152BD0447B00157F43 /* ContentView.swift in Sources */,
+				799180462BD07BBE00157F43 /* ImageName.swift in Sources */,
 				799180132BD0447B00157F43 /* LetsMeetApp.swift in Sources */,
+				799180492BD0828F00157F43 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
