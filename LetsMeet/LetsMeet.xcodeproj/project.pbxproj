@@ -20,6 +20,7 @@
 		799180492BD0828F00157F43 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799180482BD0828F00157F43 /* ColorExtension.swift */; };
 		7991804B2BD08C1100157F43 /* countryDialCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 7991804A2BD08C1100157F43 /* countryDialCode.json */; };
 		7991804D2BD08CA400157F43 /* CountryDialCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991804C2BD08CA400157F43 /* CountryDialCode.swift */; };
+		7991804F2BD0978F00157F43 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991804E2BD0978F00157F43 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		799180482BD0828F00157F43 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		7991804A2BD08C1100157F43 /* countryDialCode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = countryDialCode.json; path = ../../../../countryDialCode.json; sourceTree = "<group>"; };
 		7991804C2BD08CA400157F43 /* CountryDialCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDialCode.swift; sourceTree = "<group>"; };
+		7991804E2BD0978F00157F43 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				799180422BD07AD200157F43 /* SignInView.swift */,
+				7991804E2BD0978F00157F43 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				799180432BD07AD200157F43 /* SignInView.swift in Sources */,
 				7991804D2BD08CA400157F43 /* CountryDialCode.swift in Sources */,
 				799180152BD0447B00157F43 /* ContentView.swift in Sources */,
+				7991804F2BD0978F00157F43 /* SignUpView.swift in Sources */,
 				799180462BD07BBE00157F43 /* ImageName.swift in Sources */,
 				799180132BD0447B00157F43 /* LetsMeetApp.swift in Sources */,
 				799180492BD0828F00157F43 /* ColorExtension.swift in Sources */,

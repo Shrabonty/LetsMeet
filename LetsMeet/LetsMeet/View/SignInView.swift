@@ -22,18 +22,13 @@ struct SignInView: View {
      
     var body: some View {
        
-        //NavigationView { // Step 1
+        NavigationView { // Step 1
             
             GeometryReader { geo in
                 
                 ZStack(alignment: /*@START_MENU_TOKEN@*/Alignment(horizontal: .center, vertical: .center)/*@END_MENU_TOKEN@*/){
                    
-                    //Image(ImageName.backgroundImage)
-                        //.resizable()
-                        //.scaledToFill()
-                        //.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                       // .frame(width: geo.size.width, height: geo.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        //.opacity(1.0)
+ 
                     
                     //Logo
                     VStack(spacing:3){
@@ -126,12 +121,11 @@ struct SignInView: View {
                         
                         VStack{
                             
-                            //NavigationLink( // Step 3
-                            // destination: OtpView(),
-                            //isActive: $isActive
-                            
-                            //)
-                            //{
+                            NavigationLink( // Step 3
+                            destination: SignUpView(),
+                            isActive: $isActive
+                            )
+                            {
                             // your custom case that u talking about in question
                             // for example, with button its can be used like that:
                             Button(action: {
@@ -144,12 +138,20 @@ struct SignInView: View {
                                     .foregroundColor(.white)
                                 
                             })
-                            //}
+                            }
                         }
                         VStack{
-                            Text("Create Accounts")
-                                .foregroundColor(.yellow)
-                                .padding(.top,40)
+                            
+                            NavigationLink( // This link goes to signUp page..
+                            destination: SignUpView(),
+                            isActive: $isActive
+                            
+                            ){
+                                    Text("Create Account")
+                                        .foregroundColor(.yellow)
+                                        .padding(.top,30)
+                               }
+                            
                         }
                         
                     }
@@ -166,7 +168,7 @@ struct SignInView: View {
             .edgesIgnoringSafeArea(.bottom)
             //.navigationBarHidden(true)
             //.navigationTitle(" ")
-      // }
+       }
 
     }
     
